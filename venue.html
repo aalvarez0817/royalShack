@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Venue</title>
+     <!-- Bootstrap CSS -->
+<link
+rel="stylesheet"
+href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+/>
+
+<!-- Additional CSS must be placed after Bootstrap CSS. When same elements are impacted CSS added after overrides previous line CSS-->
+<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+<link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Merriweather:400,900|Oranienbaum&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css" />  
+</head>
+<body>
+    <header class="jumbotron jumbotron-fluid" style="background-image: url(img/Venue2.jpg); background-size:cover; background-repeat:no-repeat; height: 600px;">
+        <nav class="navbar navbar-expand-md navbar-dark sticky-top" >
+          <div class="container"> 
+            <a class="navbar-brand" href="#">THE ROYAL SHACK</a>
+              <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#shackNavbar">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+          
+              <div class="collapse navbar-collapse" id="shackNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i> Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+                <li class="nav-item active"><a class="nav-link" href="#">Venue</a></li>
+                <li class="nav-item"><a class="nav-link" href="store.html">Store</a></li> 
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+              </ul>
+            
+            <div class="col-lg-3 div-align-right ml-auto">
+              <a href ="#" class="pr-0" id="checkVenue"><type="button" class="btn btn-outline-light">Check Availabity</button></a>
+              </div>
+                <div class="col-lg-2 div-align-right">
+                  <a href ="#" class="pr-0" id="bookVenue"><type="button" class="btn btn-outline-light">Book Now</button></a>
+                </div> 
+              </div>
+              </div>
+              </nav>
+             
+<!-- Modal form window -->
+
+<div id="checkVenueModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+          <div class="modal-header bg-info text-white">
+              <h3 class="modal-title">Check Availability </h3>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+   <div class ="modal-body">
+     <div class="container-fluid">
+      <form class="form-group">
+       <div class ="row">
+           <label for="numCampers" class="col-sm-6 col-form-label text-dark">Venue</label>
+           <select id="numCampers" name="numCampers" class="col form-control">
+            <option selected>Select...</option> 
+            <option value="Great Hall">The Great Hall</option>
+             <option value="Garden">The Garden</option>
+              </select>
+       </div>
+       <br>
+       <div class ="row">
+         <label for="date" class="col-sm-6 col-form-label text-dark">Date</label>
+         <input type="date" id ="date" name="date" placeholder="date" class="col form-control">
+       </div>
+       <div class="col pl-0">                       
+      </div>
+      <br>
+                 
+       <div class="form-row">
+       <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cancel</button>
+        <button type="submit" class="btn btn-primary btn-sm ml-1">Check</button>
+    </div>
+     </form>
+   </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+<div id="bookVenueModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+          <div class="modal-header bg-info text-white">
+              <h3 class="modal-title">Book Venue </h3>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+   <div class ="modal-body">
+     <div class="container-fluid">
+      <form class="form-group">
+       <div class ="row">
+           <label for="numCampers" class="col-sm-6 col-form-label text-dark">Venue</label>
+           <select id="numCampers" name="numCampers" class="col form-control">
+            <option selected>Select...</option> 
+            <option value="Great Hall">The Great Hall</option>
+             <option value="Garden">The Garden</option>
+              </select>
+       </div>
+       <br>
+       <div class ="row">
+         <label for="date" class="col-sm-6 col-form-label text-dark">Date</label>
+         <input type="date" id ="date" name="date" placeholder="date" class="col form-control">
+       </div>
+       <div class="col pl-0">                       
+      </div>
+      <br>
+                 
+       <div class="form-row">
+       <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cancel</button>
+        <button type="submit" class="btn btn-primary btn-sm ml-1">Reserve</button>
+    </div>
+     </form>
+   </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+            </header>
+
+            <div style="background-color:darkred">
+              <div class="row" >
+                  <div class="col pt-3 pb-2 center-white-div">
+            <h1>RENTAL VENUES</h1>
+                  </div>
+                </div>
+                      </div>
+                  
+                      
+        <div class="container pb-5">
+                <div class="row">
+                  <div class="col pt-5 pb-5 center-white-div">
+          <h3>The Great Hall</h3>
+                  </div>
+             </div>
+    <div class="row">
+        <div class="col">
+            <img src="img/GreatHall.jpg" style=" float: left;" class ="about-us-image";>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum posuere lorem ipsum dolor sit. Cursus metus aliquam eleifend mi. Ut lectus arcu bibendum at varius vel pharetra vel turpis. Ut consequat semper viverra nam libero justo laoreet sit. In hendrerit gravida rutrum quisque non tellus. Amet purus gravida quis blandit turpis. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Sollicitudin ac orci phasellus egestas. Feugiat in fermentum posuere urna nec tincidunt. Amet mattis vulputate enim nulla aliquet porttitor. Viverra nam libero justo laoreet sit. Magna ac placerat vestibulum lectus mauris ultrices. Nunc mattis enim ut tellus elementum sagittis. Magna eget est lorem ipsum dolor sit amet consectetur adipiscing. Scelerisque viverra mauris in aliquam sem fringilla ut morbi. Aliquam ut porttitor leo a diam sollicitudin tempor id eu. In vitae turpis massa sed elementum tempus egestas sed.
+
+            </p>
+        </div>
+
+    </div>
+    <div class="row">
+      <div class="col-12 pt-5 pb-5 center-white-div">
+<h3>The Garden</h3>
+      </div>
+ </div>
+    <div class="row">
+        <div class="col">
+            <img src="img/BeerGarden2.jpg" style=" float: left;" class ="about-us-image"; >
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum posuere lorem ipsum dolor sit. Cursus metus aliquam eleifend mi. Ut lectus arcu bibendum at varius vel pharetra vel turpis. Ut consequat semper viverra nam libero justo laoreet sit. In hendrerit gravida rutrum quisque non tellus. Amet purus gravida quis blandit turpis. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Sollicitudin ac orci phasellus egestas. Feugiat in fermentum posuere urna nec tincidunt. Amet mattis vulputate enim nulla aliquet porttitor. Viverra nam libero justo laoreet sit. Magna ac placerat vestibulum lectus mauris ultrices. Nunc mattis enim ut tellus elementum sagittis. Magna eget est lorem ipsum dolor sit amet consectetur adipiscing. Scelerisque viverra mauris in aliquam sem fringilla ut morbi. Aliquam ut porttitor leo a diam sollicitudin tempor id eu. In vitae turpis massa sed elementum tempus egestas sed.
+
+            </p>
+        </div>
+
+    </div>
+</div>
+<!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+
+h3 {
+  
+    text-align: center;
+    color:  white;
+}
+
+body{
+    font-family: 'Merriweather', serif;
+    background-color:black;
+    
+  
+    
+}
+
+p{
+    color:  white;
+}
+footer{
+    padding-top: 2rem;
+    color: white;
+    margin-bottom: 5px;
+    
+    
+}
+
+.jumbotron{
+    margin:0;
+    padding-top: 0;
+    
+}
+
+
+ .welcome-text {
+    font-family:  'Fredericka the great', serif;
+    text-align: center;   
+    color:white;
+    /* color: #FFEC33; */
+    margin: 12% 7% 0;
+    font-size: 5rem;
+    text-shadow: -1px 1px 2px black,
+				  1px 1px 2px black,
+				  1px -1px 0 black,
+                  -1px -1px 0 black;
+ background-color: rgba(0, 0, 0, 0.15);
+   
+} 
+
+.welcome-message{
+   
+    margin-top: 3%;
+    font-family: 'Oranienbaum', serif;
+    font-size: 2rem;
+   /* color: #FFEC33 ; */
+    color: white;
+    text-align: center;
+    letter-spacing: 5px;
+    
+    text-shadow: -1px 1px 2px black,
+				  1px 1px 2px black,
+				  1px -1px 0 black,
+                  -1px -1px 0 black;
+    background-color: rgba(0, 0, 0, 0.1);
+    
+}
+
+.center-white-div{
+   
+text-align: center;
+color: white;
+    
+
+
+
+}
+.what-we-offer-image{
+  
+height: 200px;
+width: 350px;
+text-align: center;
+object-fit: cover;
+
+}
+
+.about-us-image {
+    width: 400px;
+    margin-right: 1rem;
+    margin-top:5px;
+
+}
+.navbar {
+    background-color: rgba(0, 0, 0, 0.25)
+
+}
+
+.div-align-right{
+    text-align: right;
+}
+
